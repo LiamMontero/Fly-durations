@@ -1,52 +1,24 @@
-# Data Analyst (Proyecto Académico) – Análisis de Tendencias de Vuelos
+# Data Analyst (Academic Project) – Flight Trend Analysis
 
-## Análisis Exploratorio de Datos con R y dplyr
+## Exploratory Data Analysis with R and dplyr
 
-Me encargaron la tarea de analizar un conjunto de datos de vuelos del segundo semestre de
-2022 para extraer tendencias clave y responder a preguntas operativas específicas. Mi objetivo
-era transformar los datos en bruto en insights accionables, utilizando R y el paquete dplyr para
-la manipulación y agregación de datos.
+I was tasked with analyzing a flight dataset from the second half of 2022 to extract key trends and answer specific operational questions. My goal was to transform the raw data into actionable insights, using R and the dplyr package for data manipulation and aggregation.
 
-Mi enfoque se basó en la integración de tres fuentes de datos distintas: un registro detallado de
-vuelos, un catálogo de aerolíneas y una base de datos de aeropuertos. Al combinar estas
-fuentes, pude enriquecer los datos transaccionales con información descriptiva, como los
-nombres completos de las aerolíneas y aeropuertos, lo que fue crucial para presentar
-resultados claros y comprensibles.
+My approach was based on the integration of three distinct data sources: a detailed flight log, an airline catalog, and an airport database. By combining these sources, I was able to enrich the transactional data with descriptive information, such as the full names of airlines and airports, which was crucial for presenting clear and understandable results.
 
-Para responder a las preguntas de negocio, realicé una serie de análisis enfocados y precisos:
+To answer the business questions, I performed a series of focused and precise analyses:
 
-1. Identificación de la Ruta Más Concurrida: Analicé todos los vuelos que partían de los
-aeropuertos del área de Nueva York (identificados de manera robusta por su zona
-horaria, "America/New_York"). Al agrupar y contar los vuelos, determiné con precisión
-la combinación de aerolínea y aeropuerto de destino que representa el corredor aéreo
-de mayor volumen, así como la duración promedio de vuelo para esta ruta crítica.
+1. Identifying the Busiest Route: I analyzed all flights departing from New York City-area airports (robustly identified by their time zone, "America/New_York"). By grouping and counting the flights, I accurately determined the combination of airline and destination airport that represents the highest-volume air corridor, as well as the average flight duration for this critical route.
 
-2. Determinación de la Ruta de Mayor Duración: Para identificar las operaciones de largo
-alcance, calculé la duración promedio de vuelo en horas para cada ruta que partía de
-Nueva York. Esto me permitió identificar el destino que, en promedio, requiere el mayor
-tiempo de vuelo, un dato clave para la logística de tripulación y la planificación de rutas.
+2. Determining the Longest-Duration Route: To identify long-haul operations, I calculated the average flight duration in hours for each route departing from New York City. This allowed me to identify the destination that, on average, requires the longest flight time, a key input for crew logistics and route planning.
 
-3. Descubrimiento del Destino Menos Frecuentado: Con un enfoque en el aeropuerto JFK,
-realicé un análisis de frecuencia para identificar el aeropuerto de destino que recibe el
-menor número de vuelos. Este tipo de insight es valioso para la estrategia de negocio, ya
-que puede señalar oportunidades de mercado desatendidas o rutas con baja demanda
-que podrían requerir revisión.
+3. Least-Flying Destination Discovery: With a focus on JFK Airport, I performed a frequency analysis to identify the destination airport that receives the fewest flights. This type of insight is valuable for business strategy, as it can point to unmet market opportunities or routes with low demand that may require review.
 
-Mi trabajo no solo proporcionó respuestas directas a las preguntas planteadas, sino que
-también demostró un flujo de trabajo de análisis de datos completo, desde la carga y limpieza
-hasta la integración de múltiples tablas y la generación de métricas de negocio.
-Logros y Habilidades Demostradas:
-+ Extraje insights de negocio clave a partir de datos de vuelos complejos, respondiendo a
-preguntas sobre las rutas más y menos frecuentes y las de mayor duración.
-+ Demostré una alta competencia en la manipulación de datos con dplyr, utilizando
-funciones como filter, group_by, summarise y which.max para realizar análisis
-complejos.
-+ Integré y gestioné con éxito múltiples fuentes de datos para enriquecer el análisis y
-presentar resultados comprensibles (por ejemplo, convirtiendo códigos de
-aeropuertos FAA en nombres completos).
-+ Realicé análisis de frecuencia y de agregación para cuantificar patrones operativos,
-como la identificación del corredor aéreo de mayor tráfico desde Nueva York.
-+ Transformé los datos en métricas útiles para el negocio, como la conversión del tiempo
-de vuelo de minutos a horas para una mejor interpretación.
-• Proporcioné inteligencia de negocio accionable, identificando tanto las rutas de alto
-rendimiento como las potenciales oportunidades en destinos menos frecuentados.
+My work not only provided direct answers to the questions posed, but also demonstrated a complete data analysis workflow, from loading and cleansing to integrating multiple tables and generating business metrics.
+Accomplishments and Demonstrated Skills:
++ Extracted key business insights from complex flight data, answering questions about the most and least frequent routes and those with the longest durations.
++ Demonstrated high proficiency in data manipulation with dplyr, using functions such as filter, group_by, summarise, and which.max to perform complex analyses.
++ Successfully integrated and managed multiple data sources to enrich analysis and present understandable results (e.g., converting FAA airport codes into full names).
++ Performed frequency and aggregation analysis to quantify operational patterns, such as identifying the busiest air corridor from New York.
++ Transformed data into business-useful metrics, such as converting flight time from minutes to hours for better interpretation.
++ Provided actionable business intelligence, identifying both high-performing routes and potential opportunities in less-frequented destinations.
